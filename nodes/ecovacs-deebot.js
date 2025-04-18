@@ -271,7 +271,7 @@ module.exports = function (RED) {
                         const msg = createMsgObject('AirQuality', object);
                         node.send(msg);
                     });
-                    node.vacbot.on('MinorMap', (object) => {
+                    node.vacbot.on('getMinorMap', (object) => {
                         const msg = createMsgObject('MinorMap', object);
                         node.send(msg);
                     });
@@ -279,7 +279,7 @@ module.exports = function (RED) {
                         const msg = createMsgObject('MapImage', object);
                         node.send(msg);
                     });
-                    node.vacbot.on('MajorMap', (object) => {
+                    node.vacbot.on('getMajorMap', (object) => {
                         const msg = createMsgObject('MajorMap', object);
                         node.send(msg);
                     });
