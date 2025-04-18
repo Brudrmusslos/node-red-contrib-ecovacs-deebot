@@ -271,16 +271,16 @@ module.exports = function (RED) {
                         const msg = createMsgObject('AirQuality', object);
                         node.send(msg);
                     });
-                    node.vacbot.on('getMinorMap', (object) => {
-                        const msg = createMsgObject('getMinorMap', object);
+                    node.vacbot.on('MinorMap', (object) => {
+                        const msg = createMsgObject('MinorMap', object);
                         node.send(msg);
                     });
                     node.vacbot.on('MapImage', (object) => {
                         const msg = createMsgObject('MapImage', object);
                         node.send(msg);
                     });
-                    node.vacbot.on('getMajorMap', (object) => {
-                        const msg = createMsgObject('getMajorMap', object);
+                    node.vacbot.on('MajorMap', (object) => {
+                        const msg = createMsgObject('MajorMap', object);
                         node.send(msg);
                     });
                     // Activate additional simple events if enabled
