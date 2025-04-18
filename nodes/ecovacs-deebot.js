@@ -271,8 +271,7 @@ module.exports = function (RED) {
                         const msg = createMsgObject('AirQuality', object);
                         node.send(msg);
                     });
-
-                  node.vacbot.on('getMinorMap', (object) => {
+                    node.vacbot.on('getMinorMap', (object) => {
                         const msg = createMsgObject('getMinorMap', object);
                         node.send(msg);
                     });
